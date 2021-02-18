@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="Love Tester - Love Test Online" />
+<meta name="keywords" content="love, test, love test, online, crush, " />
+<title>Love Tester</title>
+<link href="main.css" rel="stylesheet" type="text/css" />
+<link rel="icon" type="image/png" href="#.png"/>
+</head>
+    <body>
+    <div class="container">
+        <div class="card">
+            <div class="box">
+                <h2>Love Tester</h2>
+                <div class="carre"></div>
+                <form action="#" id="myForm">
+                    <div class="form-group">
+                        <input type="text" name="" class="name" placeholder="Your Name" id="name" >
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="" class="other" placeholder="Other Name" id="other">
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" onclick="cal()">Calculate</button>
+                    </div><br>
+                </form>
+                <div class="percent">
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="number">
+                        <input type="text" class="gval" id="value">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+        function cal() {
+
+            var name = document.getElementById('name').value;
+            var other = document.getElementById('other').value;
+            if (name == " " || !isNaN(name) || other == " " || !isNaN(other)) {
+                alert('Invalid input')
+            } else {
+                var data = Math.random() * 100;
+                data = Math.floor(data);
+                document.getElementById('value').value = data + "%";
+                document.documentElement.style.setProperty('--i', data);
+
+            }
+        }
+    </script>
+    </body>
+</html>
