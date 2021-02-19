@@ -139,5 +139,5 @@ svg circle:nth-child(2)
     }
 }
 a {
-    transform: translate(0px, 10px);
+    z-index: 1000;
 }
