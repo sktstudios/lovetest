@@ -138,3 +138,6 @@ svg circle:nth-child(2)
        zoom: 250%;
     }
 }
+a {
+    transform: translate(0px, 10px);
+}
