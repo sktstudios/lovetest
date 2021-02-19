@@ -14,11 +14,11 @@ body{
 }
 .carre {
     position: absolute;
-width: 418.98px;
-height: 600px;
-background: rgba(255, 255, 255, 0.2);
-backdrop-filter: blur(90px);
-z-index: -1;
+    width: 418.98px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(90px);
+    z-index: -1;
 }
 .container{
     position: relative;
