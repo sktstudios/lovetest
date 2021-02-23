@@ -141,3 +141,10 @@ svg circle:nth-child(2)
 a {
     z-index: 1000;
 }
+.adbouton {
+    color: #2c87f0;
+    text-decoration: underline;
+    background: none;
+    border: none;
+    font-size: 18px;
+}
