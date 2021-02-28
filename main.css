@@ -12,6 +12,9 @@ body{
     background-image: url(background.gif);
     background-size: 220%;
 }
+h1 {
+    display: none;
+}
 .carre {
     position: absolute;
     width: 418.98px;
