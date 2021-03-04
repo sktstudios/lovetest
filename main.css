@@ -136,11 +136,6 @@ svg circle:nth-child(2)
     stroke-dashoffset: calc(440 - (440 * var(--i)) / 100);
     stroke: #bd1826;
 }
-@media (max-width: 991px) {
-    body {
-       zoom: 250%;
-    }
-}
 a {
     z-index: 1000;
 }
