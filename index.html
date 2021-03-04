@@ -16,8 +16,157 @@
 <meta name="description" content="Love Tester - Love Test Online" />
 <meta name="keywords" content="love, test, love test, online, crush, " />
 <title>Love Tester - Online Love Test</title>
-<link href="main.css" rel="stylesheet" type="text/css" />
 <link rel="icon" type="image/png" href="heart.png"/>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    background-image: url(background.gif);
+    background-size: 220%;
+}
+h1 {
+    display: none;
+}
+.carre {
+    position: absolute;
+    width: 418.98px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(90px);
+    z-index: -1;
+}
+.container{
+    position: relative;
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+}
+.container .card{
+    position: relative;
+    width: 350px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 19.79%, #FF0000 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 1;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box h2{
+    color: black;
+    font-family: 'jaldi';
+    font-size: 50px;
+    transform: translate(0px, -10px)
+}
+.box button[type = "submit"]{
+    background: red;
+    margin-left: 45px ;
+    margin-top: 20px;
+    text-align: center;
+    border: none;
+    padding: 16px 4px;
+    width: 130px;
+    outline: none;
+    color: #fff;
+    border-radius: 24px;
+    font-size: 15px;
+}
+.box .name,
+.box .other{
+    margin-top: 20px ;
+    text-align: center;
+    border: 2px solid black;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    border-radius: 24px;
+}
+.gval{
+    border: 0;
+    font-size: 100px;
+    background: none;
+    display: block;
+    margin: 20px ;
+    text-align: center;
+    padding: 14px 10px;
+    width: 160px;
+    outline: none;
+    color: #fff;
+    border-radius: 24px;
+    font-family: 'jaldi';
+}
+.percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    z-index: 1000;
+}
+.percent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 50%;
+}
+svg{
+    display: none;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+}
+svg circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #191919;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px,5px);
+}
+svg circle:nth-child(2)
+{
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+.card:nth-child(1) svg circle:nth-child(2)
+{
+    content: attr('percent');
+    stroke-dashoffset: calc(440 - (440 * var(--i)) / 100);
+    stroke: #bd1826;
+}
+a {
+    z-index: 1000;
+}
+.adbouton {
+    color: #2c87f0;
+    text-decoration: underline;
+    background: none;
+    border: none;
+    font-size: 18px;
+}
+</style>
 </head>
     <body>
     <h1>Love Tester - Love Test Online for free to calculate lovability of 2 people or of you and your crush</h1>
